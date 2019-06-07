@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  you can't stop the signal.
+-->
+  <head>
+    <title>Team Building - Candy Love</title>
+    
+  </head>
+  <body>
+    <p id="question" style="font-family: Tahoma; font-size: 48px; margin-top:20%; color: #3F3F3F; text-align: center">
+    </p>
+    <script type="text/javascript">
+      var questions = ["What's your favorite pet?", "What's your favorite food?", "What's your hobby(ies)?", "What's the color of your first bike?", "Tell us something unusual about yourself.", "How many hours of sleep?"]
+      var colors = ["FF5555", "FFFF00", "00FF00", "7777FF", "FF00FF", "DFDFDF"]
+      var color_idx = Math.floor(Math.random() * 6);
+      bg_colour = "#" + colors[color_idx];
+      document.bgColor = bg_colour;
+      document.getElementById("question").innerText = questions[color_idx]
+    </script>
+  </body>
+</html>
