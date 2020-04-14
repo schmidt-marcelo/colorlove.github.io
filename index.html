@@ -8,12 +8,12 @@
     <p id="question" style="font-family: Tahoma; font-size: 48px; margin-top:20%; color: #3c3c3c; text-align: center">
     </p>
     <script type="text/javascript">
-      var questions = ["¿Sabes ahora que tiene solamente más un día de vida, que harias?", "¿Cuando era ninã/niño, qué profesión le gustaria ejercer?", "¿Cual libro o película le gusta más y que llamó más la atención?", "¿Cual es el viaje de tus sueños?", "Cuentanos algo que no está en tu cuenta de LinkedIn.", "¿Cómo eligiste tu profesión?"]
+      var questions = ["Conte-nos um momento marcante.", "O que sonhava ser quando criança?", "Qual livro ou filme que mais gostou?", "Qual é a viagem dos seus sonhos?", "Conte-nos algo que não está no seu LinkedIn.", "Qual animal te representa?"]
       var colors = ["FF5555", "FFFF00", "00FF00", "7777FF", "FF00FF", "DFDFDF"]
-      var color_idx = Math.floor(Math.random() * 6);
-      bg_colour = "#" + colors[color_idx];
+      var question_idx = Math.floor(Math.random() * 6);
+      bg_colour = "#" + colors[question_idx];
       document.bgColor = bg_colour;
-      document.getElementById("question").innerText = questions[color_idx]
+      document.getElementById("question").innerText = questions[question_idx]
     </script>
   </body>
 </html>
